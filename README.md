@@ -1,77 +1,78 @@
 # Game-Of-Life
 
-Este proyecto es una implementación del famoso **Juego de la Vida** de John Conway en C++ utilizando la biblioteca **SDL2** para renderizar la simulación. El Juego de la Vida es un autómata celular que simula la evolución de un conjunto de celdas vivas en una cuadrícula, siguiendo reglas simples que producen patrones complejos y fascinantes.
+This project is an implementation of John Conway's famous **Game of Life** in C++ using the **SDL2** library for rendering the simulation. The Game of Life is a cellular automaton that simulates the evolution of a set of live cells on a grid, following simple rules that produce complex and fascinating patterns.
 
-## Características
+## Features
 
-- Simulación del Juego de la Vida con reglas estándar.
-- Interfaz gráfica interactiva utilizando **SDL2**.
-- Control de la simulación mediante teclado y ratón.
-- Opciones para pausar, reiniciar, ajustar la velocidad, hacer zoom y mostrar/ocultar la cuadrícula.
+- Simulation of the Game of Life with standard rules.
+- Interactive graphical interface using **SDL2**.
+- Simulation control via keyboard and mouse.
+- Options to pause, reset, adjust speed, zoom, and show/hide the grid.
 
-## Controles
+## Controls
 
-| Tecla/Acción         | Función                                                                 |
-|-----------------------|-------------------------------------------------------------------------|
-| **Espacio**           | Pausar/Reanudar la simulación.                                         |
-| **R**                | Reiniciar la simulación (limpiar todas las celdas vivas).              |
-| **G**                | Mostrar/Ocultar la cuadrícula.                                         |
-| **+ / Teclado numérico +** | Aumentar la velocidad de la simulación (disminuir el intervalo).   |
-| **- / Teclado numérico -** | Disminuir la velocidad de la simulación (aumentar el intervalo).   |
-| **Rueda del ratón**   | Hacer zoom (acercar/alejar).                                           |
-| **Clic izquierdo**    | Activar/Desactivar una celda en la cuadrícula.                         |
-| **Clic derecho + arrastrar** | Desplazar la cuadrícula.                                        |
+| Key/Action           | Function                                                               |
+|----------------------|-------------------------------------------------------------------------|
+| **Space**           | Pause/Resume the simulation.                                          |
+| **R**               | Reset the simulation (clear all live cells).                          |
+| **G**               | Show/Hide the grid.                                                   |
+| **+ / Numeric keypad +** | Increase simulation speed (decrease interval).                     |
+| **- / Numeric keypad -** | Decrease simulation speed (increase interval).                     |
+| **Mouse wheel**     | Zoom in/out.                                                           |
+| **Left click**      | Activate/Deactivate a cell on the grid.                               |
+| **Right click + drag** | Move the grid.                                                     |
 
-## Tecnologías utilizadas
+## Technologies Used
 
-- **C++20**: Lenguaje de programación utilizado para implementar la lógica del juego.
-- **SDL2**: Biblioteca para gráficos y manejo de eventos.
-- **SDL2_image**: Extensión de SDL2 para manejar imágenes.
-- **SDL2_ttf**: Extensión de SDL2 para manejar fuentes tipográficas.
+- **C++20**: Programming language used to implement the game logic.
+- **SDL2**: Library for graphics and event handling.
+- **SDL2_image**: SDL2 extension for handling images.
+- **SDL2_ttf**: SDL2 extension for handling fonts.
 
-## Instalación
+## Installation
 
-### Requisitos previos
+### Prerequisites
 
-Asegúrate de tener instaladas las siguientes herramientas y bibliotecas en tu sistema:
+Make sure you have the following tools and libraries installed on your system:
 
-1. **Compilador C++** compatible con C++20 (como `g++`).
-2. **SDL2** y sus extensiones:
+1. **C++ compiler** compatible with C++20 (such as `g++`).
+2. **SDL2** and its extensions:
    - `libsdl2-dev`
    - `libsdl2-image-dev`
    - `libsdl2-ttf-dev`
 
-En sistemas basados en Debian/Ubuntu, puedes instalarlas con:
+On Debian/Ubuntu-based systems, you can install them with:
 
 ```bash
 sudo apt update
 sudo apt install g++ make libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev
 ```
 
-## Clonar Repositorio
-Para poder ejecutar este repositorio en tu máquina local usa el siguiente comando:
+## Clone Repository
+To run this repository on your local machine, use the following command:
 ```bash
 git clone git@github.com:hugogonzalezperez/Game-Of-Life.git
 cd Game-Of-Life
 ```
 
-## Compilar y Ejecutar
+## Compile and Run
 
-### Compilación
-Compila el proyecto utilizando el archivo makefile incluido:
+### Compilation
+Compile the project using the included makefile:
 ```bash
 make
 ```
-Esto generará el ejecutable en el directorio bin/ con el nombre GameOfLife.
+This will generate the executable in the `bin/` directory with the name `GameOfLife`.
 
-### Ejecución
-Ejecuta el programa con:
+### Execution
+Run the program with:
 ```bash
 ./bin/GameOfLife
 ```
 
-## Uso
+## Usage
 
-1. Al iniciar el programa, se abrirá una ventana con la cuadrícula del Juego de la Vida.
-2. Usa los controles mencionados en la tabla anterior para interactuar con la simulación.
-3. Puedes pausar la simulación, agregar celdas vivas, ajustar la velocidad, hacer zoom y más.
+1. When the program starts, a window will open with the Game of Life grid.
+2. Use the controls mentioned in the table above to interact with the simulation.
+3. You can pause the simulation, add live cells, adjust speed, zoom, and more.
+
